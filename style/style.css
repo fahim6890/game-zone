@@ -193,7 +193,6 @@ nav {
 
 /*online gamer*/
 .online {
-    /* border: 2px solid red; */
     max-width: 1920px;
     margin: 0px auto;
     padding: 80px 240px;
@@ -280,30 +279,70 @@ nav {
 .tatto-2 {
     left: 70%;
 }
-
-.do {
-    max-width: 1920px;
-    height: 821px;
-    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+.back{
     text-align: center;
-    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-
-.explore-game {
+.do{
+    background-color: #F948B2;
+    max-width: 1920px;
+margin: auto;
+display: flex;
+}
+.do-title{
+    width: 426px;
+    color: #FFF;
+font-size: 48px;
+font-weight: 700px;
+line-height: 60px;
+}
+.do-description{
+    width: 680px;
+    color: #FFF;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+}
+.do-ul{
+    display: flex;
+   color: #FFF;
+font-size: 20px;
+font-weight: 600px;
+line-height: 40px;
+margin: 20px 40px;
+}
+.do-ul2{
+    color: #FFF;
+text-align: right;
+font-size: 20px;
+font-weight: 600;
+line-height: 40px;
+}
+.do-button{
+font-size: 20px;
+font-weight: 600px;
+display: inline-flex;
+padding: 21px 40px;
+align-items: flex-start;
+gap: 10px;
+}
+.our-game {
     max-width: 1920px;
     margin: 0px auto;
     padding: 100px 240px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
-.explore-container {
+.our-container {
     display: flex;
     justify-content: center;
     gap: 28px;
     flex-wrap: wrap;
 }
 
-.explore-content {
+.our-content {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -315,15 +354,500 @@ nav {
 
 
 
-.explore-content:hover {
+.our-content:hover {
     border: 1px solid #FF42A5;
     color: #FF42A5;
     cursor: pointer;
 
 }
 
-.explore-title {
+.our-title {
     color: #0B0223;
     font-size: 1rem;
     font-weight: 600;
+}
+
+footer {
+    background: #0B0223;
+    color: white;
+    margin: 0px auto;
+}
+
+.foot-content {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 100px 240px 50px;
+}
+
+.foot-logo {
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.foot-item,
+.follow-icon,
+.terms,
+.all-rights {
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    padding: 15px 0px;
+    margin-bottom: 20px;
+}
+
+.foot-item a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+
+}
+
+.foot-item a:hover {
+    color: #534C64;
+    cursor: pointer;
+    background: white;
+    box-shadow: 2px 2px 5px #534C64;
+    border-radius: 25px;
+}
+
+.terms,
+.all-rights p {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+/* Media Query */
+@media screen and (max-width:576px) {
+    header {
+        margin: 0px auto;
+        /* padding: 40px; */
+
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .primary-button {
+        padding: 20px;
+        border-radius: 48px;
+        font-size: 1rem;
+    }
+
+    nav,
+    .nav-container,
+    .gamer-section-container,
+    .online-games,
+    .play-container {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .follow-container {
+        margin-top: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background: none;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 40px;
+        background-image: url('../images/group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-content-title {
+        font-size: 2rem;
+    }
+
+    .goat-title {
+        font-size: 4.5rem;
+    }
+
+    .icon-description {
+        margin: 10px 0px;
+    }
+
+    .banner-button {
+        margin-top: 20px;
+    }
+
+    .gamer-section-container {
+        margin: 30px auto;
+        padding: 0px;
+        background: none;
+    }
+
+    .gamer-content {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .gamer-everyone {
+        font-size: 1.5rem;
+    }
+
+    .online-games {
+        padding: 0px 18px;
+    }
+
+    .online-container {
+        margin: 20px 0px 0px;
+    }
+
+    .online-content {
+        padding: 10px;
+    }
+
+    .play {
+        padding: 20px;
+    }
+
+    .play-content {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .play-content p {
+        margin-bottom: 25px;
+    }
+
+    .play-image {
+        width: 80%;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .play-image2 {
+
+        width: 80%;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    .our-game {
+        margin: 25px auto;
+        padding: 10px;
+        background: none;
+    }
+
+    .our-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+        width: 100%;
+    }
+
+    .our-content {
+        width: 100%;
+        gap: 8px;
+        padding: 5px;
+        margin: 10px auto;
+    }
+
+    .our-content img {
+        width: 30%;
+    }
+
+    .our-title {
+        font-size: 10px;
+    }
+
+    .foot-content {
+        padding: 50px 10px 25px;
+    }
+
+    .foot-logo {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .foot-logo img {
+        width: 25%;
+    }
+
+    .foot-logo-title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .foot-item,
+    .follow-icon {
+        align-items: center;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 10px;
+        padding: 0px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .foot-item a {
+        font-size: 13px;
+    }
+
+    .follow-icon img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+        gap: 10px;
+        padding: 5px 25px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        justify-content: space-between;
+    }
+
+    .terms-text {
+        text-align: right;
+    }
+
+    .all-rights {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .all-rights span {
+        display: block;
+    }
+
+    
+}
+
+@media screen and (min-width:576.1px) and (max-width:992px) {
+    header {
+        margin: 0px auto;
+    }
+
+    nav,
+    .nav-container,
+    .gamer-section-container,
+    .play-container {
+        flex-direction: column;
+    }
+
+    .primary-button {
+        padding: 20px 40px;
+        border-radius: 48px;
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 25px;
+        padding: 50px;
+    }
+
+    .follow-container {
+        margin-top: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background: none;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 20px 12%;
+        background-image: url('../images/group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .banner-image {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-content-title {
+        font-size: 2rem;
+    }
+
+    .goat-title {
+        font-size: 4.5rem;
+    }
+
+    .gamer-section-container {
+        margin: 0px auto;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+
+    .gamer-content {
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .online-games {
+        padding: 18px 40px;
+    }
+
+    .online-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0px 0px;
+    }
+
+    .online-content {
+        padding: 10px;
+    }
+
+    .online-content p {
+        text-align: center;
+    }
+
+    .play {
+        padding: 20px;
+    }
+
+    .play-content {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .play-content p {
+        margin-bottom: 25px;
+    }
+
+    .play-image {
+        width: 70%;
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+
+    .play-image2 {
+
+        width: 70%;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    .our-game {
+        margin: 40px auto 20px;
+        padding: 15px;
+    }
+
+    .our-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .our-content {
+        width: 100%;
+        gap: 8px;
+        padding: 10px;
+        margin: 8px auto;
+    }
+
+    .our-content img {
+        width: 30%;
+    }
+
+    .foot-content {
+        padding: 60px 20px 25px;
+    }
+
+    .foot-logo {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .foot-logo img {
+        width: 20%;
+    }
+
+    .foot-logo-title {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .foot-item,
+    .follow-icon {
+        align-items: center;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 20px;
+        padding: 0px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .foot-item a {
+        font-size: 18px;
+    }
+
+    .follow-icon img {
+        margin-bottom: 10px;
+    }
+
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+        gap: 25px;
+        padding: 15px 60px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    .terms-text {
+        text-align: right;
+    }
+
+    .all-rights {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .all-rights span {
+        display: block;
+    }
+
 }
